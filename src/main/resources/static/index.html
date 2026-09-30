@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Registration Form</title>
+</head>
+
+<body bgcolor="MistyRose">
+
+<form id="studentForm">
+
+    <table align="center" width="700" cellpadding="10">
+
+        <!-- Heading -->
+        <tr>
+            <td colspan="2" align="center">
+                <h1>Student Registration Form</h1>
+            </td>
+        </tr>
+
+
+        <!-- Student Name -->
+        <tr>
+            <td>Student Name :</td>
+
+            <td>
+                <input type="text"
+                       id="firstName"
+                       size="21"
+                       placeholder="Enter First Name">
+
+                -
+
+                <input type="text"
+                       id="lastName"
+                       size="21"
+                       placeholder="Enter Last Name">
+            </td>
+        </tr>
+
+
+        <!-- Father's Name -->
+        <tr>
+            <td>Father's Name :</td>
+
+            <td>
+                <input type="text"
+                       id="fatherName"
+                       size="21"
+                       placeholder="Enter Father's Name">
+            </td>
+        </tr>
+
+
+        <!-- Mother's Name -->
+        <tr>
+            <td>Mother's Name :</td>
+
+            <td>
+                <input type="text"
+                       id="motherName"
+                       size="21"
+                       placeholder="Enter Mother's Name">
+            </td>
+        </tr>
+
+
+        <!-- Date of Birth -->
+        <tr>
+            <td>Date of Birth :</td>
+
+            <td>
+
+                <input type="text"
+                       id="day"
+                       size="10"
+                       placeholder="Day">
+
+                -
+
+                <input type="text"
+                       id="month"
+                       size="10"
+                       placeholder="Month">
+
+                -
+
+                <input type="text"
+                       id="year"
+                       size="10"
+                       placeholder="Year">
+
+                <i>(DD/MM/YY)</i>
+
+            </td>
+        </tr>
+
+
+        <!-- Mobile Number -->
+        <tr>
+            <td>Mobile Number :</td>
+
+            <td>
+
+                <input type="text"
+                       size="1"
+                       value="+91"
+                       readonly>
+
+                -
+
+                <input type="text"
+                       id="mobile"
+                       size="22"
+                       placeholder="Enter your mobile number">
+
+            </td>
+        </tr>
+
+
+        <!-- Email -->
+        <tr>
+            <td>Email ID :</td>
+
+            <td>
+
+                <input type="email"
+                       id="email"
+                       size="40"
+                       placeholder="Enter your email">
+
+            </td>
+        </tr>
+
+
+        <!-- Password -->
+        <tr>
+            <td>Password :</td>
+
+            <td>
+
+                <input type="password"
+                       id="password"
+                       size="20"
+                       placeholder="Enter password">
+
+            </td>
+        </tr>
+
+
+        <!-- Gender -->
+        <tr>
+            <td>Gender :</td>
+
+            <td>
+
+                <input type="radio"
+                       name="gender"
+                       value="Male">
+
+                Male
+
+                <input type="radio"
+                       name="gender"
+                       value="Female">
+
+                Female
+
+            </td>
+        </tr>
+
+
+        <!-- Department -->
+        <tr>
+            <td>Department :</td>
+
+            <td>
+
+                <input type="checkbox"
+                       name="department"
+                       value="CSE">
+
+                CSE
+
+                <input type="checkbox"
+                       name="department"
+                       value="ECE">
+
+                ECE
+
+                <input type="checkbox"
+                       name="department"
+                       value="EEE">
+
+                EEE
+
+                <input type="checkbox"
+                       name="department"
+                       value="MECH">
+
+                MECH
+
+            </td>
+        </tr>
+
+
+        <!-- Course -->
+        <tr>
+            <td>Course :</td>
+
+            <td>
+
+                <select id="course">
+
+                    <option value="">
+                        ---------------- Select Current Course ----------------
+                    </option>
+
+                    <option value="Python">
+                        Python
+                    </option>
+
+                    <option value="Java">
+                        Java
+                    </option>
+
+                    <option value="MERN Stack">
+                        MERN Stack
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="AI">
+                        AI
+                    </option>
+
+                </select>
+
+            </td>
+        </tr>
+
+
+        <!-- Student Photo -->
+        <tr>
+            <td>Student Photo :</td>
+
+            <td>
+
+                <input type="file"
+                       id="studentPhoto"
+                       accept="image/*">
+
+            </td>
+        </tr>
+
+
+        <!-- City -->
+        <tr>
+            <td>City :</td>
+
+            <td>
+
+                <input type="text"
+                       id="city"
+                       size="30"
+                       placeholder="Enter your city name">
+
+            </td>
+        </tr>
+
+
+        <!-- Address -->
+        <tr>
+            <td>Address :</td>
+
+            <td>
+
+                <textarea id="address"
+                          cols="35"
+                          rows="3"
+                          placeholder="Enter your address"></textarea>
+
+            </td>
+        </tr>
+
+
+        <!-- Register Button -->
+        <tr>
+
+            <td colspan="2" align="center">
+
+                <input type="submit"
+                       id="registerBtn"
+                       value="Register">
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</form>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
